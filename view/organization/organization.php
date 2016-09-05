@@ -34,13 +34,13 @@
 				<div  class="hgt100 ABBborder-rgt">				
 					<nav class="leftnavbar leftSidePanel" id="leftsidebar">
 						<ul class="nav nav-stacked" role="tablist">
-							<li class="active"><a href="#organisation" class="parentClass forScroll">Organisation</a></li>
-							<li><a href="#pricelist" class="parentClass forScroll">Price List</a></li>
-							<li><a href="#billing" class="parentClass forScroll">Billing</a></li>
-							<li><a href="#invoice" class="parentClass forScroll">Invoice</a></li>
-							<li><a href="#useragent" class="parentClass forScroll">User Agent</a></li>
-							<li><a href="#agentlog" class="parentClass forScroll">Agent Log</a></li>
-							<li><a href="#messenger" class="parentClass forScroll">Messenger</a></li>
+							<li class="active"><a href="#organisation" class="parentClass forScroll"><i class="fa fa-home" aria-hidden="true"></i>Organisation</a></li>
+							<li><a href="#pricelist" class="parentClass forScroll"><i class="fa fa-list" aria-hidden="true"></i>Price List</a></li>
+							<li><a href="#billing" class="parentClass forScroll"><i class="fa fa-inr" aria-hidden="true"></i>Billing</a></li>
+							<li><a href="#invoice" class="parentClass forScroll"><i class="fa fa-money" aria-hidden="true"></i>Invoice</a></li>
+							<li><a href="#useragent" class="parentClass forScroll"><i class="fa fa-user" aria-hidden="true"></i>User Agent</a></li>
+							<li><a href="#agentlog" class="parentClass forScroll"><i class="fa fa-user-plus" aria-hidden="true"></i>Agent Log</a></li>
+							<li><a href="#messenger" class="parentClass forScroll"><i class="fa fa-comments-o" aria-hidden="true"></i>Messenger</a></li>
 						</ul>
 					</nav>
 				

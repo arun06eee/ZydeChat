@@ -324,6 +324,13 @@ ul.profile_list li .fnfilterTxt {
 }
 
 
+
+#leftsidebar li i.fa {
+	text-align: center;
+    padding-right: 20px;
+    width: 30px;
+}
+
 .submenu{display: none}
 .analyticSubMenu{display: none}
 

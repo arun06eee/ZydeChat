@@ -8,6 +8,9 @@
 	
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	
+	<!--  font-awesome Css -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
 
 	<!-- custom Style -->
 	<link rel="stylesheet" href="css/custom.css" />
