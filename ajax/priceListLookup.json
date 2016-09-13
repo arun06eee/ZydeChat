@@ -1,0 +1,27 @@
+[
+	{
+		"pricelist_id": "1",
+		"pricelist_name": "Premium",
+		"pricelist_total_agent": "1",
+		"pricelist_price": "0",
+		"pricelist_duration_months": "1",
+		"pricelist_description": "$0/month, for 1 agent",
+		"pricelist_updated_dateTime": "001473078129000"
+	}, {
+		"pricelist_id": "1",
+		"pricelist_name": "Diamond",
+		"pricelist_total_agent": "2",
+		"pricelist_price": "220",
+		"pricelist_duration_months": "1",
+		"pricelist_description": "$220/month, for 2 agent",
+		"pricelist_updated_dateTime": "001473078129000"
+	},{
+		"pricelist_id": "1",
+		"pricelist_name": "Platinum",
+		"pricelist_total_agent": "unlimited",
+		"pricelist_price": "90",
+		"pricelist_duration_months": "1",
+		"pricelist_description": "$90/month, for 1 agent",
+		"pricelist_updated_dateTime": "001473078129000"
+	}
+]

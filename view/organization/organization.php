@@ -18,6 +18,9 @@
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right navbar-right-menu" ng-show="true">
 					<li class="profile_dd">
+						<a href="#"><i class="fa fa-cog" aria-hidden="true" style="width:20px;"></i>Setting</a>
+					</li>
+					<li class="profile_dd">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user icons"></i>Arun kumar <span class="caret"></span></a>
 						<ul class="dropdown-menu userSetting_list">
 							<li><a href="./#!/home" ng-click="common.fnLogout()">Logout</a></li>
@@ -34,24 +37,23 @@
 				<div  class="hgt100 ABBborder-rgt">				
 					<nav class="leftnavbar leftSidePanel" id="leftsidebar">
 						<ul class="nav nav-stacked" role="tablist">
-							<li class="active"><a href="#organisation" class="parentClass forScroll"><i class="fa fa-home" aria-hidden="true"></i>Organisation</a></li>
-							<li><a href="#pricelist" class="parentClass forScroll"><i class="fa fa-list" aria-hidden="true"></i>Price List</a></li>
-							<li><a href="#billing" class="parentClass forScroll"><i class="fa fa-inr" aria-hidden="true"></i>Billing</a></li>
-							<li><a href="#invoice" class="parentClass forScroll"><i class="fa fa-money" aria-hidden="true"></i>Invoice</a></li>
-							<li><a href="#useragent" class="parentClass forScroll"><i class="fa fa-user" aria-hidden="true"></i>User Agent</a></li>
-							<li><a href="#agentlog" class="parentClass forScroll"><i class="fa fa-user-plus" aria-hidden="true"></i>Agent Log</a></li>
-							<li><a href="#messenger" class="parentClass forScroll"><i class="fa fa-comments-o" aria-hidden="true"></i>Messenger</a></li>
+							<li ng-class="{active:currentPageshow == 1}"><a class="parentClass" ng-click="currentPageshow = 1;onMenuHeaderClick($event);" href="#organizationSetup"><i class="fa fa-home" aria-hidden="true"></i>Organisation</a></li>
+							<li ng-class="{active:currentPageshow == 2}"><a class="parentClass" ng-click="currentPageshow = 2;onMenuHeaderClick($event);" href="#pricelist" 	><i class="fa fa-list" aria-hidden="true"></i>Price List</a></li>
+							<li ng-class="{active:currentPageshow == 3}"><a class="parentClass" ng-click="currentPageshow = 3;onMenuHeaderClick($event);" href="#billing" 	><i class="fa fa-inr" aria-hidden="true"></i>Billing</a></li>
+							<li ng-class="{active:currentPageshow == 4}"><a class="parentClass" ng-click="currentPageshow = 4;onMenuHeaderClick($event);" href="#invoice" 	><i class="fa fa-money" aria-hidden="true"></i>Invoice</a></li>
+							<li ng-class="{active:currentPageshow == 5}"><a class="parentClass" ng-click="currentPageshow = 5;onMenuHeaderClick($event);" href="#useragent" 	><i class="fa fa-user" aria-hidden="true"></i>User Agent</a></li>
+							<li ng-class="{active:currentPageshow == 6}"><a class="parentClass" ng-click="currentPageshow = 6;onMenuHeaderClick($event);" href="#agentlog"	><i class="fa fa-user-plus" aria-hidden="true"></i>Agent Log</a></li>
+							<li ng-class="{active:currentPageshow == 7}"><a class="parentClass" ng-click="currentPageshow = 7;onMenuHeaderClick($event);" href="#messenger" 	><i class="fa fa-comments-o" aria-hidden="true"></i>Messenger</a></li>
 						</ul>
 					</nav>
-				
 				</div>
 			</div>
-			<div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 fill col-md-offset-2 col-lg-offset-2 rightContentPanel divResize" id="Organisation">
+			<div class="col-sm-12 col-xs-12 col-md-10 col-lg-10 fill col-md-offset-2 col-lg-offset-2 rightContentPanel" id="Organisation" ng-init="currentPageshow =  1" >
 				<div class="includeFile" ng-repeat="temp in templates">
-					<section class="Organisation">
+					<section class="Organisation" ng-show="currentPageshow == temp.hasModal">
 						<div ng-include="pageURL+temp.url"></div>
 					</section>
-					<hr/>
+					<hr ng-show="currentPageshow == temp.hasModal" />
 				</div>
 			</div>
 		</div>

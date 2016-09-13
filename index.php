@@ -26,6 +26,10 @@
 	<!-- JQuery Plugins -->
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 
+	<!-- JQuery Datatable plugins -->
+	<script type="text/javascript" src="js/jquery.dataTables.js"></script>
+	<script type="text/javascript" src="js/dataTables.fixedColumns.js"></script>
+
 	<!-- Angularjs Plugins -->
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular-ui-router.js"></script>
@@ -35,6 +39,6 @@
 
 	<!-- Custom Script -->
 	<script src="dist/main.js"></script>
-	
+
 </body>
 </html>

@@ -11,7 +11,7 @@
 			requireBase: false
 		});
 
-		$urlRouterProvider.otherwise('login');
+		$urlRouterProvider.otherwise('organization');
 
 		$stateProvider
 			.state('organization', {
